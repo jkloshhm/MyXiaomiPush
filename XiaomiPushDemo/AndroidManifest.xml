@@ -84,7 +84,6 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".CustomActivity"/>
     </application>
 
 </manifest>

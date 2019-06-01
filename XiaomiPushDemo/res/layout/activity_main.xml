@@ -7,8 +7,8 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_marginTop="10dp"
-        android:scrollbars="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:scrollbars="vertical">
 
         <TextView
             android:id="@+id/log"
@@ -23,22 +23,22 @@
     <View
         android:layout_width="1px"
         android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"/>
+        android:background="@android:color/darker_gray" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:orientation="vertical">
+        android:paddingBottom="10dp">
 
         <Button
             android:id="@+id/set_alias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/set_alias"
             android:textSize="@dimen/text_btn_size" />
@@ -47,9 +47,9 @@
             android:id="@+id/unset_alias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/unset_alias"
             android:textSize="@dimen/text_btn_size" />
@@ -58,27 +58,28 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/subscribe_topic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/subscribe_topic"
             android:textSize="@dimen/text_btn_size" />
+
         <Button
             android:id="@+id/unsubscribe_topic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/unsubscribe_topic"
             android:textSize="@dimen/text_btn_size" />
@@ -86,18 +87,18 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
 
 
         <Button
             android:id="@+id/set_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/set_account"
             android:textSize="@dimen/text_btn_size" />
@@ -106,27 +107,28 @@
             android:id="@+id/unset_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/unset_account"
             android:textSize="@dimen/text_btn_size" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
 
 
         <Button
             android:id="@+id/pause_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/pause_push"
             android:textSize="@dimen/text_btn_size" />
@@ -135,34 +137,28 @@
             android:id="@+id/resume_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:background="@drawable/all_btn"
             android:text="@string/resume_push"
             android:textSize="@dimen/text_btn_size" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/set_accept_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/all_btn"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/all_btn"
             android:text="@string/set_accept_time"
             android:textSize="@dimen/text_btn_size" />
     </LinearLayout>
-
-<Button
-    android:id="@+id/jump"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="jump"/>
-
 </LinearLayout>
