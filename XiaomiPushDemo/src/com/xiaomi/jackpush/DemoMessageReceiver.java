@@ -78,8 +78,8 @@ public class DemoMessageReceiver extends PushMessageReceiver {
         Log.v(DemoApplication.TAG,
                 "onNotificationMessageClicked is called. " + message.toString());
         String log = context.getString(R.string.click_notification_message, message.getContent());
-        Log.i("jack_guo","xiaomipushmessage__jackpush_content= "+ message.getContent());//mipad alisa:96e9c7628f78d96c4de8343cf9c27392
-        Log.i("jack_guo","xiaomipushmessage__onNotificationMessageClicked_message= "+ message);
+        Log.i("jack_guo", "xiaomipushmessage__jackpush_content= " + message.getContent());//mipad alisa:96e9c7628f78d96c4de8343cf9c27392
+        Log.i("jack_guo", "xiaomipushmessage__onNotificationMessageClicked_message= " + message);
         MainActivity.logList.add(0, getSimpleDate() + " " + log);
 
         if (!TextUtils.isEmpty(message.getTopic())) {
@@ -99,7 +99,7 @@ public class DemoMessageReceiver extends PushMessageReceiver {
     public void onNotificationMessageArrived(Context context, MiPushMessage message) {
         Log.v(DemoApplication.TAG,
                 "onNotificationMessageArrived is called. " + message.toString());
-        Log.i("jack_guo","xiaomipushmessage__onNotificationMessageArrived_message= "+ message);
+        Log.i("jack_guo", "xiaomipushmessage__onNotificationMessageArrived_message= " + message);
         String log = context.getString(R.string.arrive_notification_message, message.getContent());
         MainActivity.logList.add(0, getSimpleDate() + " " + log);
 
@@ -126,7 +126,7 @@ public class DemoMessageReceiver extends PushMessageReceiver {
         if (MiPushClient.COMMAND_REGISTER.equals(command)) {
             if (message.getResultCode() == ErrorCode.SUCCESS) {
                 mRegId = cmdArg1;
-                Log.i("jack_guo","result.message==mRegId==="+mRegId);
+                Log.i("jack_guo", "result.message==mRegId===" + mRegId);
                 log = context.getString(R.string.register_success);
             } else {
                 log = context.getString(R.string.register_fail);

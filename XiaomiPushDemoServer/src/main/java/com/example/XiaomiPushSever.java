@@ -7,7 +7,6 @@ import com.xiaomi.xmpush.server.Sender;
 
 /**
  * Created by jkl on 2018/3/23.
- *
  */
 
 public class XiaomiPushSever {
@@ -18,7 +17,7 @@ public class XiaomiPushSever {
     public static void main(String[] args) throws Exception {
         try {
             sendPushBroadcast();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -28,7 +27,7 @@ public class XiaomiPushSever {
         Sender sender = new Sender(APP_SECRET_KEY, Region.Other);
         String title = "小米推送——消息标题";
         String description = "小米推送——消息描述";
-        String messagePayload ="小米推送——消息内容";
+        String messagePayload = "小米推送——消息内容";
         Message message = new Message.Builder()
                 //title设置在通知栏展示的通知的标题，不允许全是空白字符，长度小于16，中英文均以一个计算。
                 .title(title)

@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DemoApplication.setMainActivity(this);
-        mLogView = (TextView) findViewById(R.id.log);
+        mLogView =  findViewById(R.id.log);
         // 设置别名
         findViewById(R.id.set_alias).setOnClickListener(new OnClickListener() {
 

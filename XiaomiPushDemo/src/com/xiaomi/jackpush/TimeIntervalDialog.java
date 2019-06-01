@@ -55,19 +55,19 @@ public class TimeIntervalDialog extends Dialog implements OnTimeChangedListener 
         setContentView(R.layout.set_time_dialog);
         setCancelable(true);
         setTitle(mContext.getString(R.string.set_accept_time));
-        mStartTimePicker = (TimePicker) findViewById(R.id.startTimePicker);
+        mStartTimePicker =  findViewById(R.id.startTimePicker);
         mStartTimePicker.setIs24HourView(true);
         mStartTimePicker.setCurrentHour(mStartHour);
         mStartTimePicker.setCurrentMinute(mStartMinute);
         mStartTimePicker.setOnTimeChangedListener(this);
-        mEndTimePicker = (TimePicker) findViewById(R.id.endTimePicker);
+        mEndTimePicker =  findViewById(R.id.endTimePicker);
         mEndTimePicker.setIs24HourView(true);
         mEndTimePicker.setCurrentHour(mEndHour);
         mEndTimePicker.setCurrentMinute(mEndMinute);
         mEndTimePicker.setOnTimeChangedListener(this);
-        Button applyBtn = (Button) findViewById(R.id.apply);
+        Button applyBtn = findViewById(R.id.apply);
         applyBtn.setOnClickListener(clickListener);
-        Button cancelBtn = (Button) findViewById(R.id.cancel);
+        Button cancelBtn =  findViewById(R.id.cancel);
         cancelBtn.setOnClickListener(clickListener);
     }
 
