@@ -6,11 +6,16 @@ import com.xiaomi.xmpush.server.Region;
 import com.xiaomi.xmpush.server.Sender;
 
 /**
- * Created by jkl on 2018/3/23.
+ * @author jkl on 2018/3/23.  小米推送服务端代码，直接Run就可以发消息了。
  */
 
 public class XiaomiPushSever {
 
+    /**
+     * APP_SECRET_KEY要和客户端的appId、appKey对应。在小米后台添加应用程序申请可以得到这三个值。
+     * MY_PACKAGE_NAME就是你申请的应用程序的包名。
+     *
+     */
     private static String APP_SECRET_KEY = "Iua85d0tL56xesjLvX85Zg==";
     private static String MY_PACKAGE_NAME = "com.xiaomi.jackpush";
 
